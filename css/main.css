@@ -16,16 +16,17 @@ body {
     margin: 0;
     height: 88px;
     border-bottom: 1px solid #D9FFF5;
-}
-
-.header__container {
     padding-left: 16px;
     padding-right: 16px;
     background-color: #FFFFFF;
+    max-width: 1440px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 @media (min-width: 768px){
-    .header__container {
+    .header {
         padding-left: 24px;
         padding-right: 24px;
     }
@@ -38,14 +39,6 @@ body {
 }
 
 /* НАВИГАЦИЯ */
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 88px;
-
-}
 
 .nav__left,
 .nav__right {
@@ -79,9 +72,9 @@ li {
     opacity: 0.5;
 }
 
-.bth-round__call,
-.bth-round__chat,
-.bth-round__profile,
+.bth-round--call,
+.bth-round--chat,
+.bth-round--profile,
 .divider-right {
     display: none;
 }
@@ -90,22 +83,22 @@ li {
     .nav__right li:nth-child(-n+3) {
         display: flex;
     }
-    .bth-round__call,
-    .bth-round__chat,
-    .bth-round__profile,
+    .bth-round--call,
+    .bth-round--chat,
+    .bth-round--profile,
     .divider-right {
     display: block;
     }
 
-    .nav__left li:nth-child(1) {
+    .bth-round--burger {
         order: -1;
     }
 
-    .nav__left li:nth-child(2) {
+    .logo-link {
         order: 1;
     }
 
-    .nav__left li:nth-child(3) {
+    .divider-left {
         order: 0;
     }
 }
@@ -230,7 +223,7 @@ li {
     }
 }
 
-.menu__item {
+.slide-menu__link {
     display: flex;
     align-items: center;
     border: none;
@@ -245,7 +238,7 @@ li {
     text-decoration: none;
 }
 
-.menu__item:hover {
+.slide-menu__link:hover {
     display: flex;
     align-items: center;
     background-color: #ffffff;
@@ -319,11 +312,11 @@ li {
 
     .image-container__img {
         position: relative;
-       border-radius: 5px;
-       width: 100%;
-       height: auto;
-       display: block;
-       object-fit: contain;
+        border-radius: 5px;
+        width: 100%;
+        height: auto;
+        display: block;
+        object-fit: contain;
         flex: 1;
         left: 0;
     }
@@ -362,15 +355,11 @@ li {
 
 /* ЧИТАТЬ ДАЛЕЕ */
 
-.read-more {
-    display: flex;
-    gap: 8px;
-    padding-bottom: 16px;
-}
-
 .read-more__bth {
     border: none;
     background-color: #F8F8F8;
+    padding-bottom: 16px;
+    padding-right: 8px;
 }
 
 .read-more__text {
@@ -378,4 +367,8 @@ li {
     color: #1B1C21;
     text-decoration: none;
     font-size: 16px;
+}
+
+.read-more__text:hover {
+    color: #7E7E82;
 }

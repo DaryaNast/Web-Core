@@ -9,72 +9,62 @@
 </head>
 <body>
     <header class="header">
-        <div class="header__container">
-            <nav class="nav">
-                <ul class="nav__left">
-                    <li>
-                        <button class="bth-round bth-round__burger">
-                        <img src="./images/menu.svg" alt="Меню">
-                        </button>
-                    </li>
+        <div class="nav__left">
+            <button class="bth-round bth-round--burger">
+                <img src="./images/menu.svg" alt="Меню">
+            </button>
 
-                    <li>
-                        <a class="logo-link" href="#">
-                        <img src="./images/logo/logo.png" alt="Перейти на начальную страницу">
-                        </a>
-                    </li>
+            <a class="logo-link" href="#">
+                <img src="./images/logo/logo.png" alt="Перейти на начальную страницу">
+            </a>
 
-                    <li>
-                        <div class="divider-left">
-                        <img src="./images/divider.svg" alt="">
-                        </div>
-                    </li>
-                </ul>
+            <div class="divider-left">
+                <img src="./images/divider.svg" alt="">
+            </div>
+        </div>
 
-                <ul class="nav__right">
-                    <li>
-                    <button class="bth-round bth-round__call">
-                        <img src="./images/call.svg" alt="Позвонить">
-                    </button>
-                    </li>
+        <ul class="nav__right">
+            <li>
+                <button class="bth-round bth-round--call">
+                    <img src="./images/call.svg" alt="Позвонить">
+                </button>
+            </li>
 
-                    <li>
-                    <button class="bth-round bth-round__chat">
-                        <img src="./images/chat.svg" alt="Написать">
-                    </button>
-                    </li>
+            <li>
+                <button class="bth-round bth-round--chat">
+                    <img src="./images/chat.svg" alt="Написать">
+                </button>
+            </li>
 
-                    <li>
-                        <button class="bth-round bth-round__profile">
-                        <img src="./images/profile.svg" alt="Профиль">
-                    </button>
-                    </li>
+            <li>
+                <button class="bth-round bth-round--profile">
+                    <img src="./images/profile.svg" alt="Профиль">
+                </button>
+            </li>
 
-                    <li>
-                    <div class="divider-right">
-                        <img src="./images/divider.svg" alt="">
-                    </div>
-                    </li>
+            <li>
+                <div class="divider-right">
+                    <img src="./images/divider.svg" alt="">
+                </div>
+            </li>
 
-                    <li>
-                        <button class="bth-round bth-round__repair">
-                        <img src="./images/request.svg" alt="Оставить заявку">
-                    </button>
-                    </li>
+            <li>
+                <button class="bth-round bth-round--repair">
+                    <img src="./images/request.svg" alt="Оставить заявку">
+                </button>
+            </li>
 
-                    <li>
-                        <button class="bth-round bth-round__status">
-                        <img src="./images/status.svg" alt="Статус ремонта">
-                    </button>
-                    </li>
-                </ul>
-            </nav>
-        </div> 
+            <li>
+                <button class="bth-round bth-round--status">
+                    <img src="./images/status.svg" alt="Статус ремонта">
+                </button>
+            </li>
+        </ul>
     </header>
 
     <main class="main">
-        <article class="main__container">
-            <section class="title">
+        <div class="main__container">
+            <header class="title">
                 <h1 class="title__title-copy">Услуги и сервисы</h1>
                 
                 <div class="title__vertical-line"></div>
@@ -82,47 +72,47 @@
                 <div class="title__button">
                     <div class="title__button-repair">
                         <a href="#" class="title__button-repair--text">Оставить заявку</a>
-                        <button class="bth-round bth-round__repair">
+                        <button class="bth-round bth-round--repair">
                             <img src="./images/request.svg" alt="Оставить заявку">
                         </button>
                     </div>
 
                     <div class="title__button-status">
                         <a href="#" class="title__button-status--text">Статус ремонта</a>
-                        <button class="bth-round bth-round__status">
+                        <button class="bth-round bth-round--status">
                             <img src="./images/status.svg" alt="Статус ремонта">
                         </button>
                     </div>
                 </div>
-            </section>
+            </header>
                     
             <nav class="slide-menu">
                 <ul class="slide-menu__list">
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Ремонтируемые бренды</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Ремонтируемые бренды</a>
                     </li>
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Ремонтируемые устройства</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Ремонтируемые устройства</a>
                     </li>
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Дополнительные услуги</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Дополнительные услуги</a>
                     </li>
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Цены на услуги</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Цены на услуги</a>
                     </li>
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Адреса сервисных центров</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Адреса сервисных центров</a>
                     </li>
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Специальные цены</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Специальные цены</a>
                     </li>
-                    <li>
-                        <a href="#" class="slide-menu__list menu__item">Отзывы</a>
+                    <li class="slide-menu__item">
+                        <a href="#" class="slide-menu__link">Отзывы</a>
                     </li>
                 </ul>
             </nav>
 
-            <section class="first-block">
+            <article class="first-block">
                 <div class="first-block__text">
                     <div class="text__content">
                         <p class="text__content text__content--mobile">
@@ -138,18 +128,14 @@
                         </p>
                     </div>
 
-                    <div class="read-more">
-                        <button class="read-more__bth">
-                            <img src="./images/arrows.svg" alt="Раскрыть текст">
-                        </button>
-                        <a href="#" class="read-more__text">Читать далее</a>
-                    </div>
+                    <button class="read-more__bth">
+                        <img src="./images/arrows.svg" alt="Раскрыть текст">
+                    </button>
+                    <span class="read-more__text">Читать далее</span>
                 </div>
-
                 <img class="image-container__img" src="./images/picture.png" alt="Фото режима работы и логотипа">
-
-            </section>
-        </article>
+            </article>
+        </div>
 
         <footer>
 
