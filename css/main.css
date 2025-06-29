@@ -7,7 +7,6 @@ body {
     margin: 0;
     overflow-y: auto;
     height: 100%;
-    background-color: #F8F8F8;
 }
 
 /* ШАПКА */
@@ -90,7 +89,7 @@ li {
     display: block;
     }
 
-    .bth-round--burger {
+    .bth-round--menu {
         order: -1;
     }
 
@@ -103,7 +102,131 @@ li {
     }
 }
 
+/* Burger-menu */
+
+.burger-menu {
+    width: 320px;
+    height: 100%;
+    box-shadow: 16px 0 52px 0 #0E185033;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.burger-menu__container {
+   margin-bottom: 0;
+}
+
+.burger-menu__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 88px;
+}
+
+.burger-menu__header-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.burger-menu__list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 32px;
+    margin: 32px 0;
+}
+
+.burger-menu__item {
+    padding-left: 16px;
+    line-height: 24px;
+}
+
+.burger-menu__item:last-child {
+    padding-bottom: 0;
+}
+
+.burger-menu__link {
+    text-decoration: none;
+    list-style: none;
+    font-family: 'TT Lakes-Medium', 'Arial', sans-serif;
+    font-size: 16px;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+}
+
+.burger-menu__item:hover {
+    border-left: 4px solid #41F6D7;
+}
+
+.burger-menu__link:hover {
+    color: #7E7E82;
+}
+
+.burger-menu__footer {
+    padding-left: 16px;
+}
+
+.burger-menu__buttons {
+    display: flex;
+    padding-bottom: 16px;
+    margin: 0;
+    gap: 16px;
+    padding-left: 0;
+}
+
+.burger-menu__address {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.burger-menu__mail,
+.burger-menu__phone {
+    font-family: 'TT Lakes-Regular', 'Arial', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    list-style: none;
+    font-style: normal;
+    color: #1B1C21;
+    letter-spacing: -0.2px;
+
+}
+
+.burger-menu__phone {
+    font-family: 'TT Lakes-Bold', 'Arial', sans-serif;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    padding-bottom: 40px;
+}
+
+.burger-menu__language {
+    display: flex;
+    font-family: 'TT Lakes-Medium', 'Arial', sans-serif;
+    font-size: 16px;
+    gap: 7px;
+    margin: 0;
+    padding-bottom: 32px;
+    padding-left: 0;
+}
+
+.bth__language {
+    all: unset;
+}
+
+.bth__language:hover {
+    color: #7E7E82;
+}
+
 /* MAIN */
+
+.main {
+    background-color: #F8F8F8;
+}
 
 .main__container {
     background-color: #F8F8F8;
