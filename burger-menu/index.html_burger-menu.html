@@ -8,22 +8,21 @@
     <link rel="stylesheet" href="../fonts/TTLakes%20/stylesheet.css">
 </head>
 <body>
-    <nav class="burger-menu">
-        <div class="burger-menu__container">
-            <header class="burger-menu__header">
-                <div class="burger-menu__header-wrapper">
-                    <button class="bth-round bth-round--menu-close">
-                        <img src="../images/menu-close.svg" alt="Закрыть меню">
-                    </button>
+    <aside class="burger-menu">
+        <header class="burger-menu__header">
+            <button class="bth-round bth-round--menu-close">
+                <img src="../images/menu-close.svg" alt="Закрыть меню">
+            </button>
 
-                    <a class="logo-link" href="#">
-                        <img src="../images/logo/logo.png" alt="Перейти на начальную страницу">
-                    </a>
-                </div>
-                <button class="bth-round bth-round--status-burger">
-                    <img src="../images/status-burger.svg" alt="Статус ремонта">
-                </button>
-            </header>
+            <a class="logo" href="#">
+                <img src="../images/logo/logo.png" alt="Перейти на начальную страницу">
+            </a>
+
+            <button class="bth-round bth-round--status-burger">
+                <img src="../images/status-burger.svg" alt="Статус ремонта">
+            </button>
+        </header>
+        <nav class="burger-menu__nav">
             <ul class="burger-menu__list">
                 <li class="burger-menu__item"><a href="#" class="burger-menu__link">Ремонт техники</a></li>
                 <li class="burger-menu__item"><a href="#" class="burger-menu__link">Услуги и сервисы</a></li>
@@ -34,7 +33,7 @@
                 <li class="burger-menu__item"><a href="#" class="burger-menu__link">Наши сервисные центры</a></li>
                 <li class="burger-menu__item"><a href="#" class="burger-menu__link">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
         <footer class="burger-menu__footer">
             <ul class="burger-menu__buttons">
                 <li>
@@ -60,12 +59,12 @@
                 <a class="burger-menu__mail" href="mailto:mail@cps.com">mail@cps.com</a>
                 <a class="burger-menu__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
             </address>
-            <ul class="burger-menu__language">
-                <li><button class="bth__language">RU</button></li>
-                <li><button class="bth__language">EN</button></li>
-                <li><button class="bth__language">CH</button></li>
+            <ul class="burger-menu__language language">
+                <li><button class="language__bth">RU</button></li>
+                <li><button class="language__bth">EN</button></li>
+                <li><button class="language__bth">CH</button></li>
             </ul>
         </footer>
-    </nav>
+    </aside>
 </body>
 </html>
