@@ -1,0 +1,50 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.price {
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: $border-radius;
+  }
+  &__thead {
+    text-align: left;
+    color: $grey;
+    height: 56px;
+  }
+  &__tbody {
+    background-color: $white;
+
+    padding-left: 16px;
+  }
+  &__row {
+    height: 64px;
+    font-size: 14px;
+    font-family: $ff-regular;
+    letter-spacing: 0.2px;
+    border-bottom: 1px solid $border-color;
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  &__header {
+    height: 48px;
+    padding-left: 16px;
+    padding-right: 16px;
+    @media (min-width: 1440px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+  &__cell {
+    padding-left: 16px;
+    padding-right: 16px;
+    @media (min-width: 1440px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    &--right {
+      text-align: right;
+    }
+  }
+}

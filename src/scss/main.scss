@@ -1,0 +1,30 @@
+@use "./global/variables" as *;
+@use "./global/fonts";
+@use "./global/mixins";
+@use "./global/normalize";
+@use "./global/reset";
+@use "./global/visually-hidden";
+//js
+@use "./global/rotated";
+
+//blocks
+@use "./blocks/body";
+@use "./blocks/burger-menu";
+@use "./blocks/btn-round";
+@use "./blocks/header";
+@use "./blocks/title";
+@use "./blocks/main";
+@use "./blocks/slide-menu";
+@use "./blocks/first-block";
+@use "./blocks/read-more-btn";
+@use "./blocks/swiper";
+@use "./blocks/btn-rectangular";
+@use "./blocks/btn-square";
+@use "./blocks/price";
+@use "./blocks/btn-oval";
+@use "./blocks/additional-info";
+@use "./blocks/commercial-offer";
+@use "./blocks/footer";
+@use "./blocks/logo";
+@use "./blocks/language";
+@use "./blocks/communication-forms";

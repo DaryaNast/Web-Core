@@ -1,0 +1,16 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.additional-info {
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  padding-left: 16px;
+  padding-top: 16px;
+  @media (min-width: 768px) {
+    padding-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 32px;
+  }
+}

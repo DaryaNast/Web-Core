@@ -1,0 +1,32 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.read-more-btn {
+  display: flex;
+  gap: 8px;
+  padding-top: 16px;
+  padding-left: 16px;
+  @media (min-width: 768px) {
+    padding-left: 24px;
+  }
+  @media (min-width: 1440px) {
+    padding-left: 35px;
+  }
+  &--hidden {
+    display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      bottom: 0;
+      transition: max-height 0.5s ease;
+    }
+  }
+  &__text {
+    font-family: $ff-medium;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+  }
+  &:hover {
+    @include grey-text-animation;
+  }
+
+}

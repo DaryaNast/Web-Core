@@ -1,0 +1,70 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-left: 16px;
+  @media (min-width: 768px) {
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @media (min-width: 1440px) {
+    padding-top: 42px;
+    padding-left: 35px;
+  }
+  &__vertical-line {
+    height: 40px;
+    width: 4px;
+    background-color: $color-highlight;
+    border-radius: 0 4px 4px 0;
+    position: absolute;
+    margin-left: -16px;
+    @media (min-width: 768px) {
+      margin-left: -24px;
+    }
+    @media (min-width: 1440px) {
+      margin-left: -34px;
+    }
+  }
+
+  &__title-copy {
+    font-family: $ff-bold;
+  }
+  &__button {
+    display: none;
+    @media (min-width: 1440px) {
+      display: flex;
+      gap: 32px;
+      &-repair,
+      &-status {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        &--text {
+          font-family: $ff-medium;
+        }
+      }
+    }
+  }
+  &-brands {
+    border-top: 1px solid $color-shadow;
+    padding: 16px;
+    background: linear-gradient(to right, #F8F8F8, $white);
+    height: 56px;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    box-sizing: border-box;
+    @media (min-width: 768px) {
+      padding-top: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+    @media (min-width: 1440px) {
+      padding-top: 42px;
+      padding-left: 35px;
+    }
+  }
+}

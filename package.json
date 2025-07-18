@@ -1,5 +1,28 @@
 {
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "swiper": "^11.2.10"
-  }
+  },
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^7.0.4"
+  },
+  "name": "web-core",
+  "version": "1.0.0",
+  "description": "Практическая задача 3.1.4",
+  "main": "vite.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-watch": "sass --watch ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaryaNast/Web-Core.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaryaNast/Web-Core/issues"
+  },
+  "homepage": "https://github.com/DaryaNast/Web-Core#readme"
 }

@@ -1,0 +1,56 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.first-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__content {
+    overflow: hidden;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    line-height: 18px;
+    max-height: 90px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  &__read-more-btn {
+    padding-left: 16px;
+  }
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: stretch;
+    gap: 48px;
+    &__content {
+      max-height: 160px;
+      line-height: 20px;
+      padding-left: 24px;
+    }
+    &__read-more-btn {
+      padding-left: 24px;
+    }
+    &__text {
+      flex: 1;
+    }
+    &__img {
+      position: relative;
+      border-radius: 5px;
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      flex: 1;
+
+    }
+  }
+@media (min-width: 1440px) {
+  gap: 36px;
+    &__content {
+      max-height: 160px;
+      padding-left: 35px;
+    }
+  &__read-more-btn {
+    padding-left: 35px;
+  }
+  }
+}

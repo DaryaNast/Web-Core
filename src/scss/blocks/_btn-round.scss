@@ -1,0 +1,39 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.btn-round {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    @include button-animation;
+  }
+
+  &--menu {
+    @media (min-width: 768px) {
+      order: -1;
+    }
+  }
+
+  &--logo-link {
+    @media (min-width: 768px) {
+      order: 1;
+    }
+  }
+
+  &--go-second {
+    position: relative;
+    left: 165px;
+    @media (min-width: 768px) {
+      left: 150px;
+    }
+  }
+}
+
+

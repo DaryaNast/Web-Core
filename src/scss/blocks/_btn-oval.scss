@@ -1,0 +1,16 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.btn-oval {
+  border-radius: 20px;
+  width: 119px;
+  height: 32px;
+  &:hover {
+    @include button-animation;
+  }
+  &__slide {
+    position: absolute;
+    left: 125px;
+    top: 155px;
+  }
+}

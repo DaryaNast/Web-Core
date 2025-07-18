@@ -1,0 +1,9 @@
+@use "../global/variables" as *;
+@use "../global/mixins" as *;
+
+.language__btn {
+  all: unset;
+  &:hover {
+    @include grey-text-animation;
+  }
+}

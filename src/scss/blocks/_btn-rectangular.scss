@@ -1,0 +1,29 @@
+@use "../global/mixins" as *;
+@use "../global/variables" as *;
+
+.btn-rectangular {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  border: 1px solid $border-color;
+  background-color: $white;
+  padding: 16px;
+  border-radius: 6px;
+  box-sizing: border-box;
+  @media (min-width: 768px) {
+    width: 224px;
+    height: 72px;
+  }
+  @media (min-width: 1440px) {
+    width: 240px;
+    height: 72px;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+  }
+}

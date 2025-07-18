@@ -1,0 +1,32 @@
+@use "../global/variables" as *;
+@use "../global/mixins" as *;
+
+.body {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0;
+  height: 100%;
+  background-color: $color-background;
+  overflow: auto;
+  &--menu-open,
+  &--form-open {
+    overflow: hidden;
+    position: relative;
+    &::after {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.9);
+      z-index: 3;
+      pointer-events: none;
+    }
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
