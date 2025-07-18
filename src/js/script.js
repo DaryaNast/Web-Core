@@ -1,3 +1,5 @@
+import "../scss/style.scss";
+
 document.addEventListener('DOMContentLoaded', () => {
     // Элементы DOM
     const body = document.body;
