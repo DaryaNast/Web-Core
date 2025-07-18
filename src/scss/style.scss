@@ -1,8 +1,8 @@
-@use "./global/variables" as *;
-@use "./global/fonts";
-@use "./global/mixins";
 @use "./global/normalize";
 @use "./global/reset";
+@use "./global/fonts";
+@use "./global/variables" as *;
+@use "./global/mixins";
 @use "./global/visually-hidden";
 //js
 @use "./global/rotated";

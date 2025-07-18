@@ -1,23 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "TTLakes-Regular";
-  src: url("/fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "TTLakes-Medium";
-  src: url("/fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 500;
-}
-@font-face {
-  font-family: "TTLakes-Bold";
-  src: url("/fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 700;
-  font-size: 28px;
-}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -421,6 +402,25 @@ h3 {
   color: #1b1c21;
 }
 
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url("/fonts/TTLakes/TTLakes-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url("/fonts/TTLakes/TTLakes-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url("/fonts/TTLakes/TTLakes-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1381,4 +1381,4 @@ h3 {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=style.css.map */
